@@ -65,7 +65,7 @@ public class Sudoku
     /// <summary>
     /// Verifica se o posicionamento da peça é valido para o ocntexto atual
     /// </summary>
-    private bool JogadaValida()
+    private bool JogadaValida(int numero, int coluna, int linha)
     {
         throw new NotImplementedException();
     }
