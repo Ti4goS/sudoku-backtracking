@@ -1,19 +1,19 @@
-﻿using System;
-using System.Drawing;
-
-namespace Sudoku.Jogo;
+﻿namespace Sudoku.Jogo;
 
 public class Board
 {
 
-    private readonly int[,] Tabuleiro = new int[9, 9];
+    public int[,] Tabuleiro { get; }
 
+    
     /// <summary>
     /// Inicializa o tabuleiro e adiciona peças aleatórias nele
     /// </summary>
     /// <param name="quantidadeDePecas">Quantas peças vão ser geradas automáticamente</param>
     public Board(int quantidadeDePecas)
     {
+        Tabuleiro = new int[9, 9];
+
         InicializarTabuleiro();
 
         GerarPecasAleatorias(quantidadeDePecas);
@@ -21,13 +21,11 @@ public class Board
 
 
     /// <summary>
-    /// Função de bvacktracking para resolver o tabuleiro atual do contexto
+    /// Função de backtracking para resolver o tabuleiro atual do contexto
     /// </summary>
-    /// <returns></returns>
-    public bool ResolverTabuleiro()
-    {
-        throw new NotImplementedException();
-    }
+    /// <returns>True se conseguir achar uma solução para o tabuleiro e False se não conseguir achar</returns>
+    public bool ResolverTabuleiro() => Solucao(0, 0);
+
 
 
     /// <summary>
@@ -40,6 +38,12 @@ public class Board
 
 
     /// <summary>
+    /// Limpa o tabuleiro para uma nova instancia do jogo
+    /// </summary>
+    public void LimparTabuleiro() => InicializarTabuleiro();
+    
+
+    /// <summary>
     /// Inicializa o tabuleiro, onde -1 são todas as casas em branco
     /// </summary>
     private void InicializarTabuleiro()
@@ -48,7 +52,7 @@ public class Board
         {
             for (int j = 0; j < SudokuHelpers.TOTAL_COLUNAS; j++)
             {
-                this.Tabuleiro[i, j] = -1;
+                Tabuleiro[i, j] = -1;
             }
         }
     }
@@ -98,7 +102,46 @@ public class Board
         return true;
     }
 
-
+    /// <summary>
+    /// Resolve Através de Backtracking as partes restantes do tabuleiro
+    /// </summary>
+    /// <param name="linha">Linha atual em que o método se encontra</param>
+    /// <param name="coluna">Coluna atual em que o método se encontra</param>
+    /// <returns>True se conseguir achar uma solução para o tabuleiro e False se não conseguir achar</returns>
+    private bool Solucao(int linha, int coluna)
+    {
+        if (linha == 9)
+        {
+            return true;
+        }
+        else if (coluna == 9)
+        {
+            return Solucao(linha + 1, 0);
+        }
+        else if (Tabuleiro[linha, coluna] != -1)
+        {
+            return Solucao(linha, coluna + 1);
+        }
+        else
+        {
+            foreach (int numero in Enumerable.Range(1, 9))
+            {
+                if (JogadaValida(numero, coluna, linha))
+                {
+                    Tabuleiro[linha, coluna] = numero;
+                    if (Solucao(linha, coluna + 1))
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        Tabuleiro[linha, coluna] = -1;
+                    }
+                }
+            }
+        }
+        return false;
+    }
 
 
 }
