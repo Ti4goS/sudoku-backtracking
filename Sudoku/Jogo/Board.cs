@@ -33,7 +33,25 @@ public class Board
     /// </summary>
     public void ImprimeTabuleiro()
     {
-
+        Console.WriteLine("|---|---|---|---|---|---|---|---|---|");
+        for (int linhaAtual = 0; linhaAtual < SudokuHelpers.TOTAL_LINHAS; linhaAtual++)
+        {            
+            Console.Write("|");
+            
+            for (int colunaAtual = 0; colunaAtual < SudokuHelpers.TOTAL_COLUNAS; colunaAtual++)
+            {
+                if(Tabuleiro[linhaAtual, colunaAtual] != -1)
+                {
+                        Console.Write(" " + Tabuleiro[linhaAtual, colunaAtual] + " |");                                     
+                }
+                else
+                {
+                    Console.Write("   |");
+                }
+            }
+            Console.Write("\n");
+            Console.WriteLine("|---|---|---|---|---|---|---|---|---|");
+        }
     }
 
 
@@ -48,13 +66,11 @@ public class Board
     /// </summary>
     private void InicializarTabuleiro()
     {
-        for (int i = 0; i < SudokuHelpers.TOTAL_LINHAS; i++)
-        {
-            for (int j = 0; j < SudokuHelpers.TOTAL_COLUNAS; j++)
-            {
-                Tabuleiro[i, j] = -1;
-            }
-        }
+        for (int linhaAtual = 0; linhaAtual < SudokuHelpers.TOTAL_LINHAS; linhaAtual++)        
+            for (int colunaAtual = 0; colunaAtual < SudokuHelpers.TOTAL_COLUNAS; colunaAtual++)
+                Tabuleiro[linhaAtual, colunaAtual] = -1;
+            
+        
     }
 
 
@@ -64,8 +80,31 @@ public class Board
     /// <param name="quantidadeDePecas">Quantidade de itens que devem ser gerados no tabuleiro</param>
     private void GerarPecasAleatorias(int quantidadeDePecas)
     {
+        Random numeroRandom = new Random();
 
+        for (int peca = 0; peca < quantidadeDePecas; peca++)
+        {
+            int linhaRandom, colunaRandom, numero;
+
+            do
+            {
+                linhaRandom = numeroRandom.Next(9);
+                colunaRandom = numeroRandom.Next(9);
+            } while (Tabuleiro[linhaRandom, colunaRandom] != -1);
+
+            do
+            {
+                numero = numeroRandom.Next(1,9);
+            } while (NotValid(numero, colunaRandom, linhaRandom));
+
+            if (JogadaValida(numero, colunaRandom, linhaRandom))
+                Tabuleiro[linhaRandom, colunaRandom] = numero;
+        }
     }
+    
+
+
+    private bool NotValid(int numero, int colunaRandom, int linhaRandom) => !JogadaValida(numero, colunaRandom, linhaRandom);
 
 
     /// <summary>
@@ -101,6 +140,7 @@ public class Board
 
         return true;
     }
+
 
     /// <summary>
     /// Resolve Através de Backtracking as partes restantes do tabuleiro
