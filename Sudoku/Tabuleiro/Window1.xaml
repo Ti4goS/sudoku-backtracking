@@ -1,0 +1,111 @@
+﻿<Window x:Class="TelasSudoku.Tabuleiro.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TelasSudoku.Tabuleiro"
+        mc:Ignorable="d"
+        Title="Window1" Height="600" Width="625">
+    <Grid Background="Black">
+        <!-- Tabela 1 -->
+        <Button Content="" HorizontalAlignment="Left" Margin="19,15,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="74,15,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="129,15,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="19,70,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="74,70,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="129,70,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="19,125,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="74,125,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="129,125,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+
+        <!-- Tabela 2 -->
+        <Button Content="" HorizontalAlignment="Left" Margin="231,15,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="286,15,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="341,15,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="231,70,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="286,70,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="341,70,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="231,125,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="286,125,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="341,125,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+
+        <!-- Tabela 3 -->
+        <Button Content="" HorizontalAlignment="Left" Margin="446,15,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="501,15,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="556,15,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="446,70,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="501,70,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="556,70,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="446,125,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="501,125,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="556,125,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+
+        <!-- Tabela 4 -->
+        <Button Content="" HorizontalAlignment="Left" Margin="19,204,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="74,204,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="129,204,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="19,259,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="74,259,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="129,259,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="19,314,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="74,314,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="129,314,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+
+        <!-- Tabela 5 -->
+        <Button Content="" HorizontalAlignment="Left" Margin="231,204,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="286,204,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="341,204,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="231,259,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="286,259,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="341,259,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="231,314,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="286,314,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="341,314,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+
+        <!-- Tabela 6 -->
+        <Button Content="" HorizontalAlignment="Left" Margin="446,204,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="501,204,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="556,204,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="446,259,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="501,259,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="556,259,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="446,314,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="501,314,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="556,314,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+
+        <!-- Tabela 7 -->
+        <Button Content="" HorizontalAlignment="Left" Margin="19,394,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="74,394,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="129,394,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="19,449,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="74,449,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="129,449,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="19,504,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="74,504,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="129,504,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+
+        <!-- Tabela 8 -->
+        <Button Content="" HorizontalAlignment="Left" Margin="231,394,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="286,394,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="341,394,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="231,449,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="286,449,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="341,449,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="231,504,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="286,504,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="341,504,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        
+        <!-- Tabela 9 -->
+        <Button Content="" HorizontalAlignment="Left" Margin="446,394,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="501,394,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="556,394,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="446,449,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="501,449,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="556,449,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="446,504,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="501,504,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="556,504,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="White"/>
+
+
+    </Grid>
+</Window>
